@@ -1,0 +1,84 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+<div class="container">
+    <div class="row">
+        <ng-container >
+            <div class="col-md-4" *ngFor="let p of doctor">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="p.doctorImage" class="card-image-top" height="200" width="250">
+
+
+                    </div>
+
+
+                    <div class="card-body" *ngIf="!p.doctorEdit">
+                        <h4 class="card-title">{{ p.doctorSpecialty }}</h4>
+                        <p class="card-text">Name:{{ p.doctorName }}</p>
+                        <p class="card-text">TIme:{{ p.doctorTIme }}</p>
+                        <p class="card-text">Date:{{ p.doctorDate }}</p>
+                        </div>
+                    
+                        <div class="card-body" *ngIf="p.doctorEdit">
+                           <input type="text" name="p"[(ngModel)]="p.doctorSpecialty">
+                           <input type="text" name="p"[(ngModel)]="p.doctorName ">
+                           <input type="text" name="p"[(ngModel)]="p.doctorTIme">
+                           <input type="text" name="p"[(ngModel)]="p.doctorDate">
+                           </div>
+                      
+                    <div>
+                         <button class="btn btn-warning" *ngIf="!p.doctorEdit" (click)="toUpdate(p)">Edit</button>
+                         <button class="btn btn-primary" *ngIf="p.doctorEdit" (click)="toSave(p)">Save</button>
+                         <button class="btn btn-danger"  (click)="delete(p)">delete</button>
+                      </div>
+                    
+
+                </div>
+                
+            </div>
+        </ng-container>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #55b8f2; color:white; padding:10px;">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5>CONTACT US</h5><br>
+            <p>Hyderabad, Telangana - 500075</p>
+
+        </div>
+        <div class="col-md-2">
+            <h5>CALL US</h5><br>
+            <p>9666123999<br>040 3501 0101</p>
+
+
+        </div>
+        <div class="col-md-3">
+            <h5>QUICK LINKS</h5>
+            <ul class="list">
+              <li>Terms & Conditions</li>
+              <li>360° Virtual Tour</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Sitemap</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>CareCrowd</h3><img src="https://contactdoctor.in/images/clogo.png" height="90" width="200">
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                  
+   
+
+

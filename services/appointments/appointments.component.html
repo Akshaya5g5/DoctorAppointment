@@ -1,0 +1,95 @@
+<!-- <h2 class="text-center"><font style="color:#42981B">Book Appointment</font></h2> -->
+
+<div class="container-fluid">
+    <div class="modal-body row">
+        <div class="col-md-4 col-12">
+            <img src="https://cdn3.f-cdn.com/contestentries/357874/9993144/56d241f48ac6a_thumb900.jpg" alt="" height="600" width="600" class="img-fluid">
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="fullName" class="form-label"><b>Full Name</b></label>
+                <input type="text" id="fullName" placeholder="Full Name" class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber" class="form-label"><b>Mobile Number</b></label>
+                <input type="text" id="mobileNumber" placeholder="Mobile Number" class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label"><b>Email ID</b></label>
+                <input type="text" id="email" placeholder="Email Id" class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label"><b>Address </b></label>
+                <input type="text" id="address" placeholder="Address " class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="doctorName" class="form-label"><b>Doctor Name</b></label>
+                <input type="text" id="doctorName" placeholder="Doctor Name" class="form-control"required>
+            </div>
+      
+
+        
+            <div class="form-group">
+                <label for="dob" class="form-label"><b>Date of Birth</b></label>
+                <input type="date" id="dob" placeholder="Date of Birth" class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="form-label"><b>Gender</b></label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate" class="form-label"><b>Appointment Date</b></label>
+                <input type="date" id="appointmentDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="treatmentStyle" class="form-label"><b>Treatment Style</b></label>
+                <select id="treatmentStyle" class="form-control"required>
+                    <option value="onPerson">On Person</option>
+                    <option value="video">Video</option>
+                </select>
+            </div>
+        </div>
+   
+
+        <div class="col-md-12 text-center">
+            <button class="btn btn-danger" type="reset">Cancel</button>
+            <button class="btn btn-primary" type="button" (click)="submitForm()" >Submit</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #55b8f2; color:white; padding:10px;">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5>CONTACT US</h5><br>
+            <p>Hyderabad, Telangana - 500075</p>
+
+        </div>
+        <div class="col-md-2">
+            <h5>CALL US</h5><br>
+            <p>9666123999<br>040 3501 0101</p>
+
+
+        </div>
+        <div class="col-md-3">
+            <h5>QUICK LINKS</h5>
+            <ul class="list">
+              <li>Terms & Conditions</li>
+              <li>360° Virtual Tour</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Sitemap</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>CareCrowd</h3><img src="https://contactdoctor.in/images/clogo.png" height="90" width="200">
+          </div>
+    </div>
+</div>

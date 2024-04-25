@@ -1,0 +1,62 @@
+<div class="container-fluid ">
+    <div class="row  d-flex justify-content-center">
+        <ng-container *ngFor="let p of doctor">
+            <div class="card d-inline-block" style="width: 18rem; margin: 10px;" >
+                <div class="card-header">
+                    <img [src]="p.doctorImage"  height="200" width="200" alt="" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        {{ p.doctorName }}
+                    </h4>
+                    <p class="card-text">Specialty: {{ p.doctorSpecialty }}</p>
+                    <p class="card-text">Time: {{ p.doctorTime }}</p>
+                    <p class="card-text">Date : {{ p.doctorDate }}</p>
+
+                </div>
+                <div class="card-footer">
+                    <button class="btn" style="background-color:#06abf6;"type="button" (click)="bookNow(p.doctorId)">BOOK NOW</button>
+                    <button class="btn" style="background-color:#9c8625;" type="reset">CANCEL</button>
+                    
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div> 
+<div class="container-fluid" style="background-color: #55b8f2; color:white; padding:10px;">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5>CONTACT US</h5><br>
+            <p>Hyderabad, Telangana - 500075</p>
+
+        </div>
+        <div class="col-md-2">
+            <h5>CALL US</h5><br>
+            <p>9666123999<br>040 3501 0101</p>
+
+
+        </div>
+        <div class="col-md-3">
+            <h5>QUICK LINKS</h5>
+            <ul class="list">
+              <li>Terms & Conditions</li>
+              <li>360° Virtual Tour</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Sitemap</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>CareCrowd</h3><img src="https://contactdoctor.in/images/clogo.png" height="90" width="200">
+          </div>
+    </div>
+</div>
+
+
+
+
+

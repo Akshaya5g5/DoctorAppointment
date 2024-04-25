@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row ">
+<div  class="col-md-8" style="padding:0px;">
+    <img src="https://www.aimprosoft.com/wp-content/uploads/2022/07/How-to-Develop-a-Doctor-Appointment-Booking-App-to-Stop-Losing-Opportunities-With-No-Shows__Cover-scaled.jpg" height="800" width="1500" class="left">
+
+</div>
+      <div class="col-md-4">
+            <h1 class="text-primary mb-4">Login</h1>
+            <form (ngSubmit)="checkLogin()" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label text-info">Username</label>
+                    <input type="text" class="form-control" name="username" [(ngModel)]="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label text-info">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password" required>
+                </div>
+                <div class="form-group mt-4">
+                    <button class="btn btn-primary btn-lg mr-2" type="submit">Login</button>
+                    <button class="btn btn-danger btn-lg" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,68 @@
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-4">
+            <img src=" https://californiahealthychoice.com/images/find_a_doctor.jpg" height="400" width="400">
+        </div>
+        <div class="col-md-4">
+            <h1><font color="#42981B">AddDoctors</font></h1>
+            <form (ngSubmit)="addDoctor()">
+                <div class="form-group">
+                    <label for="doctorName" class="form-label">Doctor Name</label>
+                    <input type="text" class="form-control" name="doctorName" [(ngModel)]="doctorName">
+                </div>
+                <div class="form-group">
+                    <label for="doctorSpecialty" class="form-label">Doctor Specialty</label>
+                    <input type="text" class="form-control" name="doctorSpecialty" [(ngModel)]="doctorSpecialty">
+                </div>
+                <div class="form-group">
+                    <label for="doctorTime" class="form-label">Doctor Time</label>
+                    <input type="text" class="form-control" name="doctorTime" [(ngModel)]="doctorTime">
+                </div>
+                <div class="form-group">
+                    <label for="doctorDate" class="form-label">Doctor Date</label>
+                    <input type="number" class="form-control" name="doctorDate" [(ngModel)]="doctorDate">
+                </div>
+                <div class="form-group">
+                    <label for="doctorImage" class="form-label">Doctor Image</label>
+                    <input type="text" class="form-control" name="doctorImage" [(ngModel)]="doctorImage">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Doctor</button>
+            </form>
+        </div>
+        
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #55b8f2; color:white; padding:10px;">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5>CONTACT US</h5><br>
+            <p>Hyderabad, Telangana - 500075</p>
+
+        </div>
+        <div class="col-md-2">
+            <h5>CALL US</h5><br>
+            <p>9666123999<br>040 3501 0101</p>
+
+
+        </div>
+        <div class="col-md-3">
+            <h5>QUICK LINKS</h5>
+            <ul class="list">
+              <li>Terms & Conditions</li>
+              <li>360° Virtual Tour</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Sitemap</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>CareCrowd</h3><img src="https://contactdoctor.in/images/clogo.png" height="90" width="200">
+          </div>
+    </div>
+</div>
